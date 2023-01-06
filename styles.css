@@ -1,0 +1,44 @@
+
+
+#frame{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+}
+
+.box{
+    border: 1px solid black;
+    width: 2.57%;
+    height: 2.57%;
+    background-color: black;
+}
+
+.box:hover{
+    background-color: white;
+    border-color: white;
+}
+
+#cursorLock, #releaseLock{
+    border: 2px solid black;
+    width: fit-content;
+    margin: 0 auto;
+    font-family: Poppins;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    user-select: none;
+    margin-top: 10px;
+}
+
+#cursorLock:hover, #releaseLock:hover{
+    background-color: grey;
+    border-color: grey;
+}
+
