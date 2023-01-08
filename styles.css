@@ -3,20 +3,20 @@
 #frame{
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid blue;
+    border: 2px solid blue;
     margin: 0 auto;
     width: 360px;
     height: 360px;
 }
 
-.box{
+#box{
     border: 1px solid black;
     width: 2.57%;
     height: 2.57%;
     background-color: black;
 }
 
-.box:hover{
+#box:hover{
     background-color: white;
     border-color: white;
 }

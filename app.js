@@ -1,19 +1,34 @@
+document.onload(func());
 
 
-
-
+function func(){
 let container = document.getElementById('frame')
 for (let i = 0; i <= 1023; i++) {
-    let box = document.createElement('div');
-    box.classList.add('box')
-    container.appendChild(box)
+    let boxes = document.createElement('div');
+    boxes.id = 'box'
+    container.appendChild(boxes);
 
-  box.addEventListener('mousemove', function () {
+    boxes.addEventListener("pointermove", function () {
 
-        box.style.backgroundColor = 'white'
+        boxes.style.backgroundColor = 'white'
+
     })
+  
+}
 }
 
+
+
+
+
+  function lock() {
+        let boxes = document.getElementById('box')
+        boxes.removeEventListener('pointermove' )
+        let key = document.getElementById('cursorLock');
+        key.style.backgroundColor = 'red';
+        key.style.borderColor = 'red';
+
+    }
 
 
 
