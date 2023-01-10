@@ -21,14 +21,3 @@ for (let i = 0; i <= 1023; i++) {
 
 
 
-  function lock() {
-        let boxes = document.getElementById('box')
-        boxes.removeEventListener('pointermove' )
-        let key = document.getElementById('cursorLock');
-        key.style.backgroundColor = 'red';
-        key.style.borderColor = 'red';
-
-    }
-
-
-
